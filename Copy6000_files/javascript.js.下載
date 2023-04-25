@@ -1,0 +1,104 @@
+﻿function aModal() {
+    $("#aModal").addClass("show");
+};
+function close_aModal() {
+    $("#aModal").removeClass("show");
+};
+
+function bModal() {
+    $("#bModal").addClass("show");
+};
+function close_bModal() {
+    $("#bModal").removeClass("show");
+};
+
+function cModal() {
+    $("#cModal").addClass("show");
+};
+function close_cModal() {
+    $("#cModal").removeClass("show");
+};
+function date_period() {
+    $('#datePeriod').text('登記期間:112年3月22日~112年10月31日');
+    $('#datePeriod').attr('aria-label', '登記期間:112年3月22日~112年10月31日');
+    $('#queryPeriod').text('3月28日起開放');
+    $('#card_r').text('3/22開放');
+    $('#card_o').text('4/10開放');
+    $('#card_g').text('4/17開放');
+};
+function date_periodEn() {
+    $('#datePeriod').text('Registration Period:3/22/2023~10/31/2023');
+    $('#datePeriod').attr('aria-label', 'Registration Period:3/22/2023~10/31/2023');
+    $('#queryPeriod').text('Available on March 28');
+    $('#card_r').text('Start from 3/22');
+    $('#card_o').text('Start from 4/10');
+    $('#card_g').text('Start from 4/17');
+};
+function popWindow(url) {
+    switch (url) {
+        //ch
+        case 'WhoCan':
+            return 'https://pro.6000.gov.tw/people.html';
+            break;
+        case 'Howto':
+            return 'https://pro.6000.gov.tw/#content';
+            break;
+        case 'Direct':
+            return 'https://pro.6000.gov.tw/special.html';
+            break;
+        case 'FAQ':
+            return 'https://pro.6000.gov.tw/qa.html';
+            break;
+        case 'Anti':
+            return 'https://pro.6000.gov.tw/cheat.html';
+            break;
+        case 'agree1':
+            return 'https://pro.6000.gov.tw/agree1.html';
+            break;
+        case 'agree2':
+            return 'https://pro.6000.gov.tw/agree2.html';
+            break;
+        case 'bank':
+            return 'https://pro.6000.gov.tw/banklist.html';
+            break;
+        case 'post':
+            return 'https://pro.6000.gov.tw/post.html';
+            break;
+        case 'AA':
+            return 'https://accessibility.moda.gov.tw/Applications/Detail?category=20230224161315';
+            break;
+        //en
+        case 'WhoCanEn':
+            return 'https://pro.6000.gov.tw/people_en.html';
+            break;
+        case 'HowtoEn':
+            return 'https://pro.6000.gov.tw/index_en.html#content';
+            break;
+        case 'DirectEn':
+            return 'https://pro.6000.gov.tw/special_en.html';
+            break;
+        case 'FAQEn':
+            return 'https://pro.6000.gov.tw/qa_en.html';
+            break;
+        case 'AntiEN':
+            return 'https://pro.6000.gov.tw/cheat_en.html';
+            break;
+        case 'agree1En':
+            return 'https://pro.6000.gov.tw/agree1_en.html';
+            break;
+        case 'agree2En':
+            return 'https://pro.6000.gov.tw/agree2_en.html';
+            break;
+        case 'bankEn':
+            return 'https://pro.6000.gov.tw/banklist_en.html';
+            break;
+        case 'postEn':
+            return 'https://pro.6000.gov.tw/post_en.html';
+            break;
+        case 'AAE':
+            return 'https://accessibility.moda.gov.tw/Applications/Detail?category=20230224161315';
+            break;
+        default:
+            return 'https://pro.6000.gov.tw/';
+    }
+}
